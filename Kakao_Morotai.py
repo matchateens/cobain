@@ -11,7 +11,7 @@ import matplotlib.ticker as ticker  # Import ticker untuk FixedLocator
 # Fungsi untuk memuat data
 @st.cache_data
 def load_data():
-    csv_path = 'D:/Anggi/data/data_kakao.csv'
+    csv_path = 'data/data_kakao.csv'  # Path ke file CSV di dalam folder 'data'
     data = pd.read_csv(csv_path)
     return data
 
